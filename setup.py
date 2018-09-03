@@ -18,10 +18,8 @@ def read(*names, **kwargs):
 setup(
     name='gcforest',
     url="https://github.com/MJ10/gcForest",
-    author='',
-    author_email='',
     classifiers=[
-        'Development Status :: 1',
+        'Development Status :: 3 - Alpha',
 
         'Intended Audience :: Data scientists',
         'Topic :: Deep Learning :: Deep Forests',
@@ -31,11 +29,11 @@ setup(
     keywords='random forest :: deep learning',
     version='1.1.1',
     license='MIT',
-    description='This is a simple implementation of the deep forest method',
+    description='This is the official implementation of the deep forest method',
     long_description=re.compile('^.. start-badges.*^.. end-badges',
                                 re.M | re.S).sub('', read('README.md')),
     packages=["gcforest"],
-    package_dir={"gcforest": "lib/gcforest"},
+    package_dir={"gcforest": "gcforest"},
     include_package_data=True,
     zip_safe=True,
 )
