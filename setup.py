@@ -32,7 +32,8 @@ setup(
     description='This is the official implementation of the deep forest method',
     long_description=re.compile('^.. start-badges.*^.. end-badges',
                                 re.M | re.S).sub('', read('README.md')),
-    packages=["gcforest"],
+    packages=["gcforest", "gcforest.cascade", "gcforest.layers", "gcforest.datasets",
+              "gcforest.estimators", "gcforest.utils"],
     include_package_data=True,
     zip_safe=False,
 )
